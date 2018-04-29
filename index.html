@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
 
+
+</head>
+<body>
+    <script>
+     
+     
+     alert( "This is Fizzbuzz. Fizz buzz replaces anything divisible by 3 with fizz, anything divisible by 5 with buzz, and anything divisible by 3 and 5 fizzbuzz! Please enter a number and Fizzbuzz will print its logic between 0 and your number")
+    
+    
+     var user = prompt("enter an integer here");
+   
+    //var user = event.key
+   // alert("User number choice "+user)
+    var i = 0;
+    
+    var fizz="fizz"
+    var buzz="buzz"
+    var fizzbuzz="fizzbuzz"
+    
+     while (i=i+1, i<user) {
+     var tres = Math.floor(i/3);
+     var tresrem = i % 3;
+     var cinco = Math.floor(i/5);
+     var cincorem = i % 5;
+     if (tresrem===0 && cincorem===0) {
+     //console.log("fizzbuzz")
+     document.write("fizzbuzz ")
+     
+    }
+     else if (tresrem===0) {
+         //console.log("fizz")
+         document.write("fizz ")
+     }
+     else if (cincorem===0) {
+    // console.log("buzz")
+    document.write("buzz ")
+     }
+  
+    else {
+   //console.log(i)
+   document.write(i +" ")
+   }
+ }
+       
+    
+    </script>
+</body>
+</html>
